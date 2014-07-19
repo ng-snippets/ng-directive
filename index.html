@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>scope</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" ></script>
+        <script src="main.js" ></script>
+    </head>
+    <body ng-app = "myApp">
+        <div ng-controller="MainController">
+            <p>$scope.num value is {{num}}</p>
+            <button type="button" ng-click="increment()"  > Increment "num" </button>
+        </div>
+    </body>
+</html>
