@@ -4,11 +4,11 @@
         <div class="col-lg-8">
             <div class="btn-group">
                 <button data-ng-repeat="item in mapobj.keys" type="button" data-ng-click="cat(item)" class="btn btn-default">{{item}}</button>
-                <button type="button" data-ng-if="searchText" data-ng-click="cat(item)" class=" active btn btn-default">search</button>
+                <button type="button" data-ng-if="searchText " data-ng-click="cat(item)" class=" active btn btn-default">search</button>
             </div>
         </div>
         <div class="col-lg-4">
-            <input type="text" ng-model="searchText.name" />
+            <input type="text" data-ng-model="searchText" />
         </div>
     </div>
     <div class="row top-buffer">
@@ -18,10 +18,10 @@
             </div>
             
             <div class="btn-group-vertical" data-ng-if="searchText">
-                <button data-ng-repeat="item in items | filter:searchText.strict" type="button" data-ng-click="detail(item)" class="btn btn-default">{{item.name}}</button>
+                <button data-ng-repeat="item in items | itemSearch:searchText" type="button" data-ng-click="detail(item)" class="btn btn-default">{{item.name}}</button>
             </div>
         </div>
-        <div class="col-md-10" ng-transclude>
+        <div class="col-md-10" data-ng-transclude>
         </div>
     </div>
 </div>
