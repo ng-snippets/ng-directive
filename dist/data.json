@@ -1,0 +1,25 @@
+{
+    "items": {
+        "item1": {
+            "name": "Item 1",
+            "input": true,
+            "output": false
+        },
+        "item2": {
+            "name": "Item 2",
+            "input": true,
+            "output": false
+        },
+        "item3": {
+            "name": "Item 3",
+            "input": true,
+            "output": false
+        }
+    },
+    "map": {
+        "all": ["item1", "item2", "item3"],
+        "cat1": ["item1", "item2"],
+        "cat2": ["item2", "item3"],
+        "cat3": ["item1", "item3"]
+    }
+}
