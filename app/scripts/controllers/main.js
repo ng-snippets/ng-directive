@@ -14,5 +14,6 @@ angular.module('ngDirectiveApp')
         mapobj.keys = Object.keys(contents.map);
         mapobj.values = contents.map;
         $scope.mapobj= mapobj;
+        $scope.items = contents.items;
     });
   });
