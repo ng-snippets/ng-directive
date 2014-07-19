@@ -24,7 +24,7 @@ angular
             templateUrl: 'views/mainpage.html',
             transclude : true,
             controller: function($scope, $log) {
-                $scope.cat = function(val) {
+                $scope.cat = function(val, event) {
                     $log.info(val);
                     $scope.catval = val;
                 };
