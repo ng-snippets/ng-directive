@@ -40,7 +40,7 @@ angular
             }
             var result = [];
             angular.forEach(input, function(item) {
-                if (item.name && item.name.toLowerCase().indexOf(query) !== -1) {
+                if (item.name && item.name.toLowerCase().indexOf(query.toLowerCase()) !== -1) {
                     result.push(item);
                 }
             });
